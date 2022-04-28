@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="41.014045">
+<testcase classname="To validate the login functionality of facebook" name="To validate invalid username and invalidate password" time="6.949066">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.step.StepDefinition.user_has_to_close_the_browser(StepDefinition.java:48)&#13;&#10;&#9;at ✽.user has to close the browser(file:src/test/resources/fb.feature:19)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit the facebook.....................passed
+When To pass the invalid user name to username text box.....................passed
+And To pass the invalid password to password text box.......................passed
+And User has to click the continue button...................................passed
+Then user has to close the browser..........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.step.StepDefinition.user_has_to_close_the_browser(StepDefinition.java:48)
+	at ✽.user has to close the browser(file:src/test/resources/fb.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate Bulk Datas" time="3.629942">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:18)&#13;&#10;&#9;at ✽.bulk data &quot;del@gmail.com&quot; and &quot;&lt;password&gt;&quot; to user and text box(file:src/test/resources/fb.feature:22)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit the facebook.....................passed
+When bulk data "del@gmail.com" and "<password>" to user and text box........failed
+And Click button............................................................skipped
+Then Close window...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:18)
+	at ✽.bulk data "del@gmail.com" and "<password>" to user and text box(file:src/test/resources/fb.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate Bulk Datas 2" time="27.063309">
+<failure message="org.openqa.selenium.WebDriverException: chrome not reachable&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-FJ51G12', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\DELFIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 318628b262424cbf9634c9a425def1bd&#10;*** Element info: {Using=id, value=email}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:188)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)&#13;&#10;&#9;at org.base.BaseClass.fillText(BaseClass.java:34)&#13;&#10;&#9;at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:16)&#13;&#10;&#9;at ✽.bulk data &quot;raj@gmail.com&quot; and &quot;&lt;password&gt;&quot; to user and text box(file:src/test/resources/fb.feature:22)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit the facebook.....................passed
+When bulk data "raj@gmail.com" and "<password>" to user and text box........failed
+And Click button............................................................skipped
+Then Close window...........................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FJ51G12', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\DELFIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 318628b262424cbf9634c9a425def1bd
+*** Element info: {Using=id, value=email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.sendKeys(Unknown Source)
+	at org.base.BaseClass.fillText(BaseClass.java:34)
+	at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:16)
+	at ✽.bulk data "raj@gmail.com" and "<password>" to user and text box(file:src/test/resources/fb.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of facebook" name="To validate Bulk Datas 3" time="3.371728">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:18)&#13;&#10;&#9;at ✽.bulk data &quot;eva@gmail.com&quot; and &quot;&lt;password&gt;&quot; to user and text box(file:src/test/resources/fb.feature:22)&#13;&#10;"><![CDATA[Given To launch the chrome browser and hit the facebook.....................passed
+When bulk data "eva@gmail.com" and "<password>" to user and text box........failed
+And Click button............................................................skipped
+Then Close window...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.step.ScenarioOutlineStep.bulk_data_and_to_user_and_text_box(ScenarioOutlineStep.java:18)
+	at ✽.bulk data "eva@gmail.com" and "<password>" to user and text box(file:src/test/resources/fb.feature:22)
+]]></failure>
+</testcase>
+</testsuite>
